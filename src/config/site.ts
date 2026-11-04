@@ -7,14 +7,14 @@ export const site = {
   name: "Pipeflow",
   cta: {
     primaryLabel: "Quero testar o Pipeflow",
-    // TODO: substituir pelo link real de conversão (WhatsApp, formulário ou checkout).
-    href: "#oferta",
+    href: "https://wa.me/5551995486303",
   },
   offer: {
     discount: "75% OFF",
     period: "no primeiro mês",
-    // TODO: confirmar regras comerciais antes da publicação.
-    terms: "Condição válida para novas assinaturas. Consulte as regras da oferta com nosso time comercial.",
+    firstMonthPrice: "R$ 49,25",
+    monthlyPrice: "R$ 197",
+    terms: "75% de desconto no primeiro mês: R$ 49,25. A partir do segundo mês, R$ 197/mês.",
   },
   nav: [
     { label: "Funil", href: "#funil" },
