@@ -33,7 +33,7 @@ export function Hero() {
             </p>
           </Reveal>
           <Reveal delay={240} className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-            <Button href={site.cta.href} arrow>{site.cta.primaryLabel}</Button>
+            <Button href="#planos" arrow>{site.cta.primaryLabel}</Button>
             <Button href="#funil" variant="ghost-dark">Ver como funciona</Button>
           </Reveal>
           <Reveal delay={300}>
