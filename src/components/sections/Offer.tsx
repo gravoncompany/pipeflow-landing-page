@@ -36,8 +36,9 @@ export function Offer() {
 
               <div className="rounded-2xl bg-white p-6 text-center shadow-glow sm:p-8">
                 <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">Primeiro mês</p>
-                <p className="mt-3 font-display text-6xl font-extrabold text-navy-900 sm:text-7xl">75%</p>
-                <p className="font-display text-xl font-bold text-navy-900">de desconto</p>
+                <p className="mt-3 font-display text-4xl font-extrabold text-navy-900 sm:text-5xl">{site.offer.firstMonthPrice}</p>
+                <p className="font-display text-xl font-bold text-navy-900">75% de desconto</p>
+                <p className="mt-2 text-sm text-slate-500">Depois, {site.offer.monthlyPrice}/mês</p>
                 <div className="my-6 h-px bg-slate-100" />
                 <Button href={site.cta.href} arrow className="w-full">{site.cta.primaryLabel}</Button>
                 <p className="mt-4 text-xs leading-relaxed text-slate-500">{site.offer.terms}</p>
