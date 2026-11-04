@@ -3,7 +3,8 @@ import { ArrowRight, Check, Crown, Minus, Star } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
-import { features, plans, type FeatureValue, type Plan, type PlanId } from "../../config/plans";
+import { CopyCoupon } from "../ui/CopyCoupon";
+import { features, plans, promo, type FeatureValue, type Plan, type PlanId } from "../../config/plans";
 
 export function Plans() {
   return (
@@ -71,6 +72,24 @@ function PlanCard({ plan }: { plan: Plan }) {
             <span className="font-display text-4xl font-extrabold leading-none tracking-tight text-navy-900">Sob consulta</span>
           )}
         </div>
+
+        {plan.promo && (
+          <div className="mt-5 rounded-2xl bg-brand-50 p-4 ring-1 ring-brand-200">
+            <p className="flex flex-wrap items-center gap-2 text-sm font-bold text-navy-900">
+              <span className="rounded-full bg-brand-500 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">{promo.discount}</span>
+              no primeiro mês
+            </p>
+            <p className="mt-2 text-sm text-slate-700">
+              <strong className="font-display text-lg font-extrabold text-navy-900">{promo.firstMonthPrice}</strong> no primeiro mês com o cupom. Depois, {promo.regularPrice}/mês.
+            </p>
+            <div className="mt-3">
+              <CopyCoupon code={promo.code} tone="light" size="sm" />
+            </div>
+            <p className="mt-2 text-xs leading-relaxed text-slate-500">
+              Cole no campo “{promo.checkoutField}” do checkout. {promo.feeNote}
+            </p>
+          </div>
+        )}
 
         <p className={`mt-5 text-[15px] leading-relaxed ${popular ? "text-slate-300" : "text-slate-600"}`}>{plan.description}</p>
 

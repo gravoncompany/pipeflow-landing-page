@@ -31,6 +31,7 @@ export const site = {
     { label: "Inteligência artificial", href: "#ia" },
     { label: "Prospecção B2B", href: "#prospeccao" },
     { label: "Diferenciais", href: "#beneficios" },
+    { label: "Oferta 75% OFF", href: "#oferta" },
     { label: "Planos", href: "#planos" },
     { label: "Perguntas frequentes", href: "#faq" },
   ],

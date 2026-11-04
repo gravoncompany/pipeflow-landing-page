@@ -24,6 +24,19 @@ export const ENTERPRISE_WHATSAPP_MESSAGE =
 
 export const ENTERPRISE_WHATSAPP_URL = `https://wa.me/5551995486303?text=${encodeURIComponent(ENTERPRISE_WHATSAPP_MESSAGE)}`;
 
+/** Promoção do plano Essencial (cupom criado na Cakto). O desconto vale só na primeira cobrança. */
+export const promo = {
+  code: "PIPEFLOW75",
+  discount: "75% OFF",
+  regularPrice: "R$ 197",
+  firstMonthPrice: "R$ 49,25",
+  // Checkout do Essencial. A Cakto não documenta aplicação automática do cupom pelo link,
+  // então o visitante copia o código e cola no campo "Código de desconto".
+  checkout: "https://pay.cakto.com.br/hs7d47y_1279991",
+  checkoutField: "Código de desconto",
+  feeNote: "O valor final pode incluir taxas apresentadas pela Cakto antes da confirmação do pagamento.",
+} as const;
+
 export type Plan = {
   id: PlanId;
   name: string;
@@ -32,6 +45,8 @@ export type Plan = {
   description: string;
   cta: { label: string; href: string };
   popular?: boolean;
+  /** Mostra o destaque da promoção (cupom) no cartão. */
+  promo?: boolean;
   highlightsTitle: string;
   highlights: string[];
   extra?: { title: string; text: string };
@@ -46,6 +61,7 @@ export const plans: Plan[] = [
     description:
       "Ideal para empresas que desejam organizar seus processos comerciais, centralizar leads, integrar o WhatsApp e utilizar inteligência artificial para qualificação e acompanhamento de oportunidades.",
     cta: { label: "Assinar agora", href: "https://pay.cakto.com.br/hs7d47y_1279991" },
+    promo: true,
     highlightsTitle: "Principais recursos",
     highlights: [
       "Dashboard com gráficos",

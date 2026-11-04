@@ -28,7 +28,7 @@ export function Header() {
           ))}
         </nav>
         <div className="hidden lg:block">
-          <Button href="#planos" className="!min-h-[42px] !px-5 !py-2 !text-sm">Ver planos</Button>
+          <Button href="#oferta" className="!min-h-[42px] !px-5 !py-2 !text-sm">Resgatar 75% OFF</Button>
         </div>
         <button
           type="button"
@@ -50,7 +50,7 @@ export function Header() {
               </a>
             ))}
             <div className="mt-3" onClick={() => setOpen(false)}>
-              <Button href="#planos" className="w-full" arrow>Ver planos</Button>
+              <Button href="#oferta" className="w-full" arrow>Resgatar 75% OFF</Button>
             </div>
           </Container>
         </div>
