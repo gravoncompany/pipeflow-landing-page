@@ -13,11 +13,11 @@ export function FinalCTA() {
             Pronto para organizar suas vendas em um só fluxo?
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base text-brand-50 sm:text-lg">
-            Ative a oferta de {site.offer.discount} {site.offer.period} e comece a usar o Pipeflow com o seu time.
+            Escolha o plano ideal e comece a usar o Pipeflow com o seu time.
           </p>
           <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-            <Button href={site.cta.href} variant="white" arrow>{site.cta.primaryLabel}</Button>
-            <Button href="#faq" variant="ghost-dark">Tirar dúvidas</Button>
+            <Button href="#planos" variant="white" arrow>Ver planos</Button>
+            <Button href={site.cta.href} variant="ghost-dark">Falar no WhatsApp</Button>
           </div>
         </Reveal>
       </Container>

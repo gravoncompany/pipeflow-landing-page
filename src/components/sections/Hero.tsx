@@ -16,9 +16,9 @@ export function Hero() {
       <Container className="relative">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
-            <a href="#oferta" className="inline-flex items-center gap-2 rounded-full bg-white/5 py-1.5 pl-1.5 pr-4 text-xs font-medium text-slate-300 ring-1 ring-white/10 transition hover:bg-white/10 sm:text-sm">
-              <span className="rounded-full bg-brand-500 px-2.5 py-0.5 text-[11px] font-bold text-white">{site.offer.discount}</span>
-              {site.offer.period} para novas assinaturas
+            <a href="#planos" className="inline-flex items-center gap-2 rounded-full bg-white/5 py-1.5 pl-1.5 pr-4 text-xs font-medium text-slate-300 ring-1 ring-white/10 transition hover:bg-white/10 sm:text-sm">
+              <span className="rounded-full bg-brand-500 px-2.5 py-0.5 text-[11px] font-bold text-white">Planos</span>
+              a partir de R$ 197/mês
             </a>
           </Reveal>
           <Reveal delay={80}>

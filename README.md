@@ -13,7 +13,8 @@ npm run preview    # pré-visualiza o build em http://localhost:4173
 
 ## Onde editar
 
-- `src/config/site.ts` — link do botão de conversão, WhatsApp, textos da oferta, menu e rodapé.
+- `src/config/site.ts` — WhatsApp, menu e rodapé.
+- `src/config/plans.ts` — planos, preços, links da Cakto, mensagem do Enterprise e tabela de recursos.
 - `src/components/sections/` — uma seção por arquivo, na ordem de `src/App.tsx`.
 - `src/components/ui/` — componentes reutilizáveis (Button, SectionHeading, FeatureCard, Reveal, ScreenshotSlot...).
 - `src/components/mockups/` — demonstrações ilustrativas da interface (dados fictícios).

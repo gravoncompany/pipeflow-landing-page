@@ -6,7 +6,7 @@ import { WhatsApp } from "./components/sections/WhatsApp";
 import { AI } from "./components/sections/AI";
 import { Prospecting } from "./components/sections/Prospecting";
 import { Benefits } from "./components/sections/Benefits";
-import { Offer } from "./components/sections/Offer";
+import { Plans } from "./components/sections/Plans";
 import { FAQ } from "./components/sections/FAQ";
 import { FinalCTA } from "./components/sections/FinalCTA";
 import { Footer } from "./components/sections/Footer";
@@ -26,7 +26,7 @@ export default function App() {
         <AI />
         <Prospecting />
         <Benefits />
-        <Offer />
+        <Plans />
         <FAQ />
         <FinalCTA />
       </main>

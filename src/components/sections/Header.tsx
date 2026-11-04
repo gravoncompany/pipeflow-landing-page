@@ -28,7 +28,7 @@ export function Header() {
           ))}
         </nav>
         <div className="hidden lg:block">
-          <Button href={site.cta.href} className="!min-h-[42px] !px-5 !py-2 !text-sm">Ativar 75% OFF</Button>
+          <Button href="#planos" className="!min-h-[42px] !px-5 !py-2 !text-sm">Ver planos</Button>
         </div>
         <button
           type="button"
@@ -50,7 +50,7 @@ export function Header() {
               </a>
             ))}
             <div className="mt-3" onClick={() => setOpen(false)}>
-              <Button href={site.cta.href} className="w-full" arrow>Ativar 75% OFF</Button>
+              <Button href="#planos" className="w-full" arrow>Ver planos</Button>
             </div>
           </Container>
         </div>
