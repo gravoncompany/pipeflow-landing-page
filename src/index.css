@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+  html, body { overflow-x: clip; }
+  body { @apply bg-white font-sans text-navy-900 antialiased; }
+  h1, h2, h3, h4 { @apply font-display tracking-tight; }
+  ::selection { @apply bg-brand-500 text-white; }
+  section[id] { scroll-margin-top: 80px; }
+}
+
+@layer components {
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(143,176,255,.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(143,176,255,.07) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(90deg, #8FB0FF, #38BDF8 50%, #8FB0FF);
+    background-size: 200% auto;
+    animation: flow 6s linear infinite;
+  }
+}
+
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+.reveal.is-visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
+}
