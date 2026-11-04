@@ -9,13 +9,6 @@ export const site = {
     primaryLabel: "Quero testar o Pipeflow",
     href: "https://wa.me/5551995486303",
   },
-  offer: {
-    discount: "75% OFF",
-    period: "no primeiro mês",
-    firstMonthPrice: "R$ 49,25",
-    monthlyPrice: "R$ 197",
-    terms: "75% de desconto no primeiro mês: R$ 49,25. A partir do segundo mês, R$ 197/mês.",
-  },
   /** WhatsApp comercial (mesmo número do botão de conversão). */
   whatsapp: {
     href: "https://wa.me/5551995486303",
@@ -29,6 +22,7 @@ export const site = {
     { label: "WhatsApp", href: "#whatsapp" },
     { label: "IA", href: "#ia" },
     { label: "Prospecção B2B", href: "#prospeccao" },
+    { label: "Planos", href: "#planos" },
     { label: "Dúvidas", href: "#faq" },
   ],
   footerNav: [
@@ -37,7 +31,8 @@ export const site = {
     { label: "Inteligência artificial", href: "#ia" },
     { label: "Prospecção B2B", href: "#prospeccao" },
     { label: "Diferenciais", href: "#beneficios" },
-    { label: "Oferta", href: "#oferta" },
+    { label: "Oferta 75% OFF", href: "#oferta" },
+    { label: "Planos", href: "#planos" },
     { label: "Perguntas frequentes", href: "#faq" },
   ],
 } as const;
