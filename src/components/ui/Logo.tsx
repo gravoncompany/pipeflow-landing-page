@@ -1,13 +1,13 @@
-export function Logo({ tone = "dark" }: { tone?: "light" | "dark" }) {
+import logo from "../../assets/pipeflow-logo.png";
+
+/** Logo oficial do PipeFlow CRM: símbolo original (sem distorção) + nome do produto. */
+export function Logo({ tone = "dark", size = "md" }: { tone?: "light" | "dark"; size?: "md" | "lg" }) {
+  const symbol = size === "lg" ? "h-11 w-11" : "h-9 w-9";
   return (
     <span className="inline-flex items-center gap-2.5">
-      <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 shadow-glow" aria-hidden>
-        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none">
-          <path d="M5 7h14M5 12h10M5 17h5" stroke="white" strokeWidth="2.4" strokeLinecap="round" />
-        </svg>
-      </span>
-      <span className={`font-display text-lg font-extrabold tracking-tight ${tone === "dark" ? "text-white" : "text-navy-900"}`}>
-        Pipeflow<span className="text-brand-400"> CRM</span>
+      <img src={logo} alt="" width={180} height={180} className={`${symbol} shrink-0 object-contain`} />
+      <span className={`font-display font-extrabold tracking-tight ${size === "lg" ? "text-xl" : "text-lg"} ${tone === "dark" ? "text-white" : "text-navy-900"}`}>
+        PipeFlow CRM
       </span>
     </span>
   );

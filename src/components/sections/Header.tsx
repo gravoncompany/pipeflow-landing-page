@@ -19,7 +19,7 @@ export function Header() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled || open ? "bg-navy-950/85 backdrop-blur-xl ring-1 ring-white/5" : ""}`}>
       <Container className="flex h-16 items-center justify-between lg:h-[72px]">
-        <a href="#topo" aria-label="Pipeflow CRM — início"><Logo /></a>
+        <a href="#topo" aria-label="PipeFlow CRM — início"><Logo /></a>
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
           {site.nav.map((item) => (
             <a key={item.href} href={item.href} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">

@@ -2,7 +2,8 @@ import { Brain, ListChecks, BookOpen, Bot } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
-import { AIMock } from "../mockups/AIMock";
+import { ScreenshotSlot } from "../ui/ScreenshotSlot";
+import { screens } from "../../config/screens";
 
 const items = [
   { icon: Brain, title: "Análise de conversas", text: "A IA lê as conversas do WhatsApp e destaca sinais reais de interesse, sempre com o trecho que comprova." },
@@ -18,7 +19,7 @@ export function AI() {
       <div className="pointer-events-none absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-brand-500/20 blur-[120px]" aria-hidden />
       <Container className="relative grid items-center gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-16">
         <Reveal className="order-2 lg:order-1">
-          <AIMock />
+          <ScreenshotSlot screen={screens.chatGravonIA} tone="dark" />
         </Reveal>
         <div className="order-1 lg:order-2">
           <SectionHeading

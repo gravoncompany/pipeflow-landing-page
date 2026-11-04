@@ -3,6 +3,7 @@ import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
 import { CheckList } from "../ui/CheckList";
 import { ScreenshotSlot } from "../ui/ScreenshotSlot";
+import { screens } from "../../config/screens";
 
 const stages = [
   { name: "Novo lead", desc: "Entrada por site, anúncios, WhatsApp ou integrações", w: "100%" },
@@ -49,11 +50,12 @@ export function Funnel() {
                 "Notificações de novidades nos seus leads",
               ]}
             />
-            <div className="mt-8">
-              <ScreenshotSlot alt="Tela do funil de vendas do Pipeflow" label="Captura: tela do Pipeline" aspect="aspect-[16/9]" />
-            </div>
           </Reveal>
         </div>
+
+        <Reveal className="mx-auto mt-14 max-w-6xl">
+          <ScreenshotSlot screen={screens.fichaDoLead} />
+        </Reveal>
       </Container>
     </section>
   );

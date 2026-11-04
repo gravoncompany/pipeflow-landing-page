@@ -2,7 +2,8 @@ import { MessageCircle, Sparkles, Building2 } from "lucide-react";
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
 import { Reveal } from "../ui/Reveal";
-import { PipelineMock } from "../mockups/PipelineMock";
+import { ScreenshotSlot } from "../ui/ScreenshotSlot";
+import { screens } from "../../config/screens";
 import { site } from "../../config/site";
 
 export function Hero() {
@@ -44,10 +45,10 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={200} className="relative mx-auto mt-14 max-w-5xl lg:mt-20">
+        <Reveal delay={200} className="relative mx-auto mt-14 max-w-6xl lg:mt-20">
           <div className="pointer-events-none absolute -inset-x-10 -bottom-10 top-10 rounded-[40px] bg-brand-500/20 blur-3xl" aria-hidden />
           <div className="relative">
-            <PipelineMock />
+            <ScreenshotSlot screen={screens.pipeline} tone="dark" priority />
           </div>
         </Reveal>
       </Container>
