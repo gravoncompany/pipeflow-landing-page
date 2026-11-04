@@ -123,10 +123,24 @@ function PlanCard({ plan }: { plan: Plan }) {
           ))}
         </ul>
 
-        {plan.extra && (
-          <div className="mt-7 rounded-2xl bg-brand-50 p-4 ring-1 ring-brand-100">
-            <p className="text-sm font-bold text-navy-900">{plan.extra.title}</p>
-            <p className="mt-1 text-sm leading-relaxed text-slate-600">{plan.extra.text}</p>
+        {plan.extras && (
+          <div className="mt-7 space-y-4">
+        {plan.extras.map((extra) => (
+          <div key={extra.title} className="rounded-2xl bg-brand-50 p-4 ring-1 ring-brand-100">
+            <p className="text-sm font-bold text-navy-900">{extra.title}</p>
+            <p className="mt-1 text-sm leading-relaxed text-slate-600">{extra.text}</p>
+            {extra.points && (
+              <ul className="mt-3 space-y-2">
+                {extra.points.map((pt) => (
+                  <li key={pt} className="flex items-start gap-2 text-sm text-slate-700">
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" strokeWidth={3} aria-hidden />
+                    {pt}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
           </div>
         )}
       </div>

@@ -2,7 +2,7 @@ import type { LucideIcon } from "lucide-react";
 import {
   BarChart3, Users, Filter, MessageCircle, Sparkles, ScanSearch, Workflow, Bot, BookOpen, FileBarChart,
   MapPin, Building2, Mail, Repeat, CalendarDays, Target, TrendingUp, Landmark, FolderKanban, Megaphone,
-  Radar, LineChart, Plug, Compass, SlidersHorizontal,
+  Radar, LineChart, Plug, Compass, SlidersHorizontal, BrainCircuit,
 } from "lucide-react";
 
 export type PlanId = "essencial" | "profissional" | "enterprise";
@@ -49,7 +49,7 @@ export type Plan = {
   promo?: boolean;
   highlightsTitle: string;
   highlights: string[];
-  extra?: { title: string; text: string };
+  extras?: { title: string; text: string; points?: string[] }[];
 };
 
 export const plans: Plan[] = [
@@ -106,11 +106,23 @@ export const plans: Plan[] = [
       "Integrações personalizadas",
       "Acompanhamento estratégico mensal",
       "Ajustes e otimizações durante o mês",
+      "Open Finance + Inteligência Financeira com IA",
     ],
-    extra: {
-      title: "Acompanhamento durante todo o mês",
-      text: "Análise da operação, ajustes no CRM, otimização de automações e orientação estratégica contínua.",
-    },
+    extras: [
+      {
+        title: "Acompanhamento durante todo o mês",
+        text: "Análise da operação, ajustes no CRM, otimização de automações e orientação estratégica contínua.",
+      },
+      {
+        title: "Open Finance + Inteligência Financeira com IA",
+        text: "Seu financeiro conectado ao banco e analisado pela Gravon IA.",
+        points: [
+          "Conexão bancária via Open Finance",
+          "Receitas e despesas organizadas por categoria",
+          "Análises financeiras com IA",
+        ],
+      },
+    ],
   },
 ];
 
@@ -145,4 +157,5 @@ export const features: Feature[] = [
   { label: "Integrações personalizadas", icon: Plug, values: { essencial: false, profissional: false, enterprise: true } },
   { label: "Acompanhamento estratégico mensal", icon: Compass, values: { essencial: false, profissional: false, enterprise: true } },
   { label: "Ajustes e otimizações durante o mês", icon: SlidersHorizontal, values: { essencial: false, profissional: false, enterprise: true } },
+  { label: "Open Finance + Inteligência Financeira com IA", icon: BrainCircuit, values: { essencial: false, profissional: false, enterprise: true } },
 ];
