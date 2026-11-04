@@ -10,7 +10,7 @@ const faqs = [
   { q: "Como funciona a integração com o WhatsApp?", a: "Você conecta o número comercial da empresa e as conversas passam a ficar organizadas por contato, vinculadas ao lead correspondente no funil." },
   { q: "A inteligência artificial altera meus leads sozinha?", a: "Não. A IA analisa as conversas e sugere ações, como mudar de etapa ou adicionar uma etiqueta. A alteração só acontece depois da confirmação de alguém do seu time." },
   { q: "Posso ter mais de um funil de vendas?", a: "Sim. Você pode criar funis separados para produtos, serviços ou equipes, cada um com suas próprias etapas." },
-  { q: "Como funciona a oferta de 75% OFF?", a: "Novas assinaturas pagam apenas 25% do valor do plano no primeiro mês. A partir do segundo mês, vale o valor normal do plano escolhido. Consulte as regras com nosso time comercial." },
+  { q: "Como funciona a oferta de 75% OFF?", a: "O valor normal é R$ 197/mês. Com 75% de desconto, o primeiro mês custa R$ 49,25. A partir do segundo mês, a mensalidade é R$ 197." },
   { q: "Consigo receber leads de formulários e anúncios?", a: "Sim. É possível receber leads por integrações como o Zapier, mantendo a origem e os parâmetros de campanha (UTMs) de cada contato." },
 ];
 
