@@ -2,8 +2,6 @@ import { Layers, Smartphone, ShieldCheck, Plug, LineChart, Users, Zap, Lock } fr
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { FeatureCard } from "../ui/FeatureCard";
-import { ScreenshotSlot } from "../ui/ScreenshotSlot";
-import { Reveal } from "../ui/Reveal";
 
 const benefits = [
   { icon: Layers, title: "Tudo em uma plataforma", description: "Funil, WhatsApp, IA e prospecção sem precisar alternar entre ferramentas." },
@@ -30,10 +28,6 @@ export function Benefits() {
             <FeatureCard key={b.title} {...b} delay={(i % 4) * 70} />
           ))}
         </div>
-        <Reveal className="mt-14 grid gap-5 md:grid-cols-2">
-          <ScreenshotSlot alt="Tela de detalhes do lead no Pipeflow" label="Captura: ficha do lead" />
-          <ScreenshotSlot alt="Tela de análise de IA no Pipeflow" label="Captura: análise de IA" />
-        </Reveal>
       </Container>
     </section>
   );
