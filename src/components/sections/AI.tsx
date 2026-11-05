@@ -19,7 +19,7 @@ export function AI() {
       <div className="pointer-events-none absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-brand-500/20 blur-[120px]" aria-hidden />
       <Container className="relative grid items-center gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-16">
         <Reveal className="order-2 lg:order-1">
-          <ScreenshotSlot screen={screens.chatGravonIA} tone="dark" />
+          <ScreenshotSlot screen={screens.chatPipeflowIA} tone="dark" />
         </Reveal>
         <div className="order-1 lg:order-2">
           <SectionHeading
@@ -27,7 +27,7 @@ export function AI() {
             tone="dark"
             eyebrow="Inteligência artificial"
             title={<>IA que analisa, sugere e <span className="text-gradient">deixa a decisão com você</span></>}
-            description="Use a inteligência artificial para entender cada conversa, priorizar leads com mais aderência e ganhar tempo no dia a dia comercial."
+            description="Use a Pipeflow IA para entender cada conversa, priorizar leads com mais aderência e ganhar tempo no dia a dia comercial."
           />
           <div className="mt-10 grid gap-5 sm:grid-cols-2">
             {items.map(({ icon: Icon, title, text }, i) => (
