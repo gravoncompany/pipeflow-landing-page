@@ -24,7 +24,7 @@ npm run preview    # pré-visualiza o build em http://localhost:4173
 As capturas ficam em `src/assets/screens/` e são configuradas em `src/config/screens.ts`
 (título, texto alternativo, tamanho e lado em destaque na ampliação). Ao clicar, a imagem abre ampliada.
 
-Telas atuais: Pipeline (apresentação inicial), Ficha do lead (Funil de vendas) e Chat Gravon IA (Inteligência artificial).
+Telas atuais: Pipeline (apresentação inicial), Ficha do lead (Funil de vendas) e Chat Pipeflow IA (Inteligência artificial).
 
 ## Pendências antes de publicar
 
